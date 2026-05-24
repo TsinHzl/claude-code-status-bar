@@ -7,7 +7,7 @@ Adds real-time session stats to the Claude Code bottom status bar: token usage, 
 ```
 Claude Sonnet 4.6 | 消息: 1.2K $0.003 | 会话: 45K $0.12 | 今日: 200K $0.5 | #8 | Ctx: 28% | /Users/you/project
 ```
-
+<img width="1778" height="158" alt="image" src="https://github.com/user-attachments/assets/676b821f-b565-46f9-9138-41506f97e0b9" />
 ## Fields
 
 | Field | Description |
