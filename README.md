@@ -1,5 +1,3 @@
-> **注：** 本文档由 **claude-sonnet-4-6** 模型自动生成。
-
 # CC Status Line
 
 为 Claude Code 底部状态栏添加实时会话数据，包括 Token 消耗、费用统计、请求次数和上下文使用率。
