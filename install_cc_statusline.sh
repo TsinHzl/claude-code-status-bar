@@ -149,7 +149,18 @@ output="${output} | #${req_count}"
 used_pct=$(echo "$input" | jq -r '.context_window.used_percentage // empty')
 if [ -n "$used_pct" ]; then
     used_pct_int=$(printf "%.0f" "$used_pct")
-    output="${output} | Ctx: ${used_pct_int}%"
+    if [ "$used_pct_int" -le 20 ]; then
+        ctx_color="\033[32m"
+    elif [ "$used_pct_int" -le 50 ]; then
+        ctx_color="\033[36m"
+    elif [ "$used_pct_int" -le 70 ]; then
+        ctx_color="\033[33m"
+    elif [ "$used_pct_int" -le 85 ]; then
+        ctx_color="\033[91m"
+    else
+        ctx_color="\033[1;31m"
+    fi
+    output="${output} | ${ctx_color}Ctx: ${used_pct_int}%\033[0m"
 fi
 
 cwd=$(echo "$input" | jq -r '.cwd // .workspace.current_dir // ""')

@@ -16,8 +16,18 @@ Claude Sonnet 4.6 | 消息: 1.2K $0.003 | 会话: 45K $0.12 | 今日: 200K $0.5 
 | `会话: 45K $0.12` | Cumulative tokens and cost for this session |
 | `今日: 200K $0.5` | Total across all sessions today (resets at midnight) |
 | `#8` | Request count in the current window |
-| `Ctx: 28%` | Context window usage percentage |
+| `Ctx: 28%` | Context window usage (color-coded in 5 levels) |
 | Green path | Current working directory |
+
+`Ctx` changes color based on usage:
+
+| Range | Color |
+|-------|-------|
+| 0–20% | Green |
+| 21–50% | Cyan |
+| 51–70% | Yellow |
+| 71–85% | Bright red |
+| 86–100% | Bold red |
 
 ## Prerequisites
 
