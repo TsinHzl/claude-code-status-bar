@@ -7,6 +7,8 @@
 ```
 Claude Sonnet 4.6 | 消息: 1.2K $0.003 | 会话: 45K $0.12 | 今日: 200K $0.5 | #8 | Ctx: 28% | /Users/you/project
 ```
+<img width="1602" height="142" alt="image" src="https://github.com/user-attachments/assets/3940b9db-1613-4b2b-9e76-cf7a490bcf20" />
+
 
 ## 字段说明
 
