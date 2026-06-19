@@ -32,12 +32,7 @@ Claude Sonnet 4.6 | 消息: 1.2K $0.003 | 会话: 45K $0.12 | 今日: 200K $0.5 
 ## Prerequisites
 
 - [Claude Code](https://claude.ai/code) installed
-- `jq`
-
-```bash
-# macOS
-brew install jq
-```
+- No extra dependencies (uses only POSIX standard tools: `grep`/`sed`/`awk`)
 
 ## Installation
 

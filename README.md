@@ -34,12 +34,7 @@ Claude Sonnet 4.6 | 消息: 1.2K $0.003 | 会话: 45K $0.12 | 今日: 200K $0.5 
 ## 前置依赖
 
 - [Claude Code](https://claude.ai/code) 已安装
-- `jq`
-
-```bash
-# macOS
-brew install jq
-```
+- 无额外依赖（仅使用 `grep`/`sed`/`awk` 等 POSIX 标准工具）
 
 ## 安装
 
