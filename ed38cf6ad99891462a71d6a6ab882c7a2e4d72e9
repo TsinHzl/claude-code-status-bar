@@ -1,0 +1,25 @@
+README.md
+  3ea8d011ee88d916 8,18,22,59
+README_EN.md
+  3ea8d011ee88d916 8,16,20,57
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.20",
+  "base_commit_sha": "ed38cf6ad99891462a71d6a6ab882c7a2e4d72e9",
+  "prompts": {
+    "3ea8d011ee88d916": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "65246b68-aea6-4d51-90d8-d3d38dfc12e8",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "TsinHzl <tsinhzl@icloud.com>",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 8,
+      "overriden_lines": 0
+    }
+  }
+}
