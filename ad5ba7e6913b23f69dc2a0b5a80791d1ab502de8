@@ -1,0 +1,23 @@
+statusline-command.sh
+  3ea8d011ee88d916 10-25,34,37,40,59,67-80,83-84,100-105,108-109,115,118-119,123,126,129,133-134,143,174,180,187,209-212
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.20",
+  "base_commit_sha": "ad5ba7e6913b23f69dc2a0b5a80791d1ab502de8",
+  "prompts": {
+    "3ea8d011ee88d916": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "65246b68-aea6-4d51-90d8-d3d38dfc12e8",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "TsinHzl <tsinhzl@icloud.com>",
+      "messages": [],
+      "total_additions": 72,
+      "total_deletions": 103,
+      "accepted_lines": 70,
+      "overriden_lines": 0
+    }
+  }
+}
