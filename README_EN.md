@@ -5,7 +5,7 @@ Adds real-time session stats to the Claude Code bottom status bar: token usage, 
 ## Preview
 
 ```
-Claude Sonnet 4.6 | 消息: 1.2K $0.003 | 会话: 45K $0.12 | 今日: 200K $0.5 | #8 | Ctx: 28% | /Users/you/project
+Claude Sonnet 4.6 | 消息: 1.2K $0.003 | 会话: ↓ 45.0k tokens $0.12 | 今日: 200K $0.5 | #8 | Ctx: 28% | 14:32:05 | /Users/you/project
 ```
 <img width="1602" height="142" alt="image" src="https://github.com/user-attachments/assets/3940b9db-1613-4b2b-9e76-cf7a490bcf20" />
 ## Fields
@@ -13,10 +13,11 @@ Claude Sonnet 4.6 | 消息: 1.2K $0.003 | 会话: 45K $0.12 | 今日: 200K $0.5 
 | Field | Description |
 |-------|-------------|
 | `消息: 1.2K $0.003` | Tokens and cost for the current message |
-| `会话: 45K $0.12` | Cumulative tokens and cost for this session |
+| `会话: ↓ 45.0k tokens $0.12` | Cumulative tokens and cost for this session |
 | `今日: 200K $0.5` | Total across all sessions today (resets at midnight) |
 | `#8` | Request count in the current window |
 | `Ctx: 28%` | Context window usage (color-coded in 5 levels) |
+| `14:32:05` | Timestamp of the last request (cyan, HH:MM:SS) |
 | Green path | Current working directory |
 
 `Ctx` changes color based on usage:
@@ -53,6 +54,6 @@ Remove the `statusLine` field from `~/.claude/settings.json` and delete `~/.clau
 
 ## Notes
 
-- Daily stats are stored in `~/.claude/cache/today_accumulator.json` and reset at midnight
+- Daily stats are stored in `~/.claude/cache/today_*.txt` (flat files) and reset at midnight
 - Request count resets per window
 - `Ctx` percentage is provided by Claude Code and only appears after the first message

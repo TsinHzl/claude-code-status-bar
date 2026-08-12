@@ -5,7 +5,7 @@
 ## 效果预览
 
 ```
-Claude Sonnet 4.6 | 消息: 1.2K $0.003 | 会话: 45K $0.12 | 今日: 200K $0.5 | #8 | Ctx: 28% | /Users/you/project
+Claude Sonnet 4.6 | 消息: 1.2K $0.003 | 会话: ↓ 45.0k tokens $0.12 | 今日: 200K $0.5 | #8 | Ctx: 28% | 14:32:05 | /Users/you/project
 ```
 <img width="1602" height="142" alt="image" src="https://github.com/user-attachments/assets/3940b9db-1613-4b2b-9e76-cf7a490bcf20" />
 
@@ -15,10 +15,11 @@ Claude Sonnet 4.6 | 消息: 1.2K $0.003 | 会话: 45K $0.12 | 今日: 200K $0.5 
 | 字段 | 说明 |
 |------|------|
 | `消息: 1.2K $0.003` | 本条消息消耗的 Token 数和费用 |
-| `会话: 45K $0.12` | 本次会话累计 Token 数和费用 |
+| `会话: ↓ 45.0k tokens $0.12` | 本次会话累计 Token 数和费用 |
 | `今日: 200K $0.5` | 今日所有会话累计（跨会话，午夜重置）|
 | `#8` | 本窗口请求次数 |
 | `Ctx: 28%` | 当前上下文窗口使用率（五色显示）|
+| `14:32:05` | 最后一次请求时间（青色，HH:MM:SS）|
 | 绿色路径 | 当前工作目录 |
 
 `Ctx` 根据使用率自动变色：
@@ -55,6 +56,6 @@ bash install_cc_statusline.sh
 
 ## 说明
 
-- 今日统计存储于 `~/.claude/cache/today_accumulator.json`，每日零点自动重置
+- 今日统计存储于 `~/.claude/cache/today_*.txt`（平面文件），每日零点自动重置
 - 请求次数为当前窗口计数，新开窗口重新从 1 开始
 - `Ctx` 由 Claude Code 提供，首条消息前不显示
